@@ -27,6 +27,7 @@ public class PsqlConnector {
 	            int affectedRows = pstmt.executeUpdate();
 	            System.out.println(affectedRows);
 	            delete();
+		    conn.close();
 			
 	        } 
 	        catch (SQLException ex) {
